@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Donation Platform</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Food Donation Platform</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Donate Food</a></li>
+          <li><a href="#">Find Food</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="donate-food">
+        <h2>Donate Food</h2>
+        <form>
+          <label for="food-name">Food Name</label>
+          <input type="text" id="food-name" name="food-name">
+          <label for="food-description">Food Description</label>
+          <textarea id="food-description" name="food-description"></textarea>
+          <label for="pickup-date">Pickup Date</label>
+          <input type="date" id="pickup-date" name="pickup-date">
+          <button type="submit">Donate</button>
+        </form>
+      </section>
+      <section class="find-food">
+        <h2>Find Food</h2>
+        <p>Enter your location to find food donations near you:</p>
+        <form>
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location">
+          <button type="submit">Search</button>
+        </form>
+        <ul class="food-donations">
+          <li>
+            <h3>Food Name</h3>
+            <p>Food Description</p>
+            <p>Pickup Date: mm/dd/yyyy</p>
+            <button>Claim Donation</button>
+          </li>
+          <li>
+            <h3>Food Name</h3>
+            <p>Food Description</p>
+            <p>Pickup Date: mm/dd/yyyy</p>
+            <button>Claim Donation</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Food Donation Platform</p>
+    </footer>
+  </body>
+</html>
